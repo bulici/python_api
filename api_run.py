@@ -24,18 +24,17 @@ suite.addTest(loader.discover(TESTCASEDIR))
 # from testcase import test11mainstreaming
 # suite.addTest(loader.loadTestsFromModule(test11mainstreaming))
 
-import datetime
-#创建一个时间格式
-date = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
 #创建用例运行程序并执行用例
-file_path = os.path.join(REPORTDIR,'report_{}.html'.format(date))
+file_path = os.path.join(REPORTDIR,'report.html')
 runner = HTMLTestRunner(stream=open(file_path,'wb'),
                         title='接口自动化测试报告',
                         description='报告描述：前程贷接口自动化测试的报告。',
                         tester='布里茨')
 runner.run(suite)
 
+# import datetime
+# #创建一个时间格式
+# date = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 #另外一种测试报告:BeautifulReport
 # from BeautifulReport import BeautifulReport
 # file_path = os.path.join(REPORTDIR,'{}_接口自动化测试报告.html'.format(date))

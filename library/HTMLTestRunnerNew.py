@@ -80,7 +80,7 @@ Version in 0.7.1
 # TODO: color stderr
 # TODO: simplify javascript using ,ore than 1 class in the class attribute?
 
-import date
+import datetime
 import io
 import sys
 import time

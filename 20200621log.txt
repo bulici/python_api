@@ -1,0 +1,2 @@
+2020.06.21
+1、今天将git库clone到了新的电脑上，秘钥路径是/c/Users/Deary/.ssh/id_rsa.pub
